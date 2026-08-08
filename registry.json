@@ -1,0 +1,21 @@
+{
+	"SchemaVersion": 1,
+	"Name": "Voltage Engine — Official Plugin Registry",
+	"Plugins": [
+		{
+			"Id": "voltage.farseer",
+			"Name": "Farseer Physics",
+			"Description": "Full rigid-body physics (Box2D-lineage Farseer) with the FS* component family: FSRigidBody, FSCollisionBox/Circle/Polygon, joints, and FSWorld.",
+			"Zip": "https://github.com/VoltageEngine/Voltage.FarseerPhysics/releases/download/v1.0.0/voltage.farseer-1.0.0.zip",
+			"Git": "https://github.com/VoltageEngine/Voltage.FarseerPhysics.git",
+			"Ref": "v1.0.0",
+			"Author": "Voltage Engine",
+			"Tags": [
+				"physics",
+				"gameplay"
+			],
+			"EngineVersion": ">=0.1.0",
+			"Homepage": "https://github.com/VoltageEngine/Voltage.FarseerPhysics"
+		}
+	]
+}
