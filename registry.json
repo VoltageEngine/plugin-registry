@@ -6,24 +6,24 @@
 			"Id": "voltage.farseer",
 			"Name": "Farseer Physics",
 			"Description": "Full rigid-body physics (Box2D-lineage Farseer) with the FS* component family: FSRigidBody, FSCollisionBox/Circle/Polygon, joints, and FSWorld.",
-			"Zip": "https://github.com/VoltageEngine/Voltage.FarseerPhysics/releases/download/v1.0.0/voltage.farseer-1.0.0.zip",
+			"Zip": "https://github.com/VoltageEngine/Voltage.FarseerPhysics/releases/download/v1.2.0/voltage.farseer-1.2.0.zip",
 			"Git": "https://github.com/VoltageEngine/Voltage.FarseerPhysics.git",
-			"Ref": "v1.0.0",
+			"Ref": "v1.2.0",
 			"Author": "Voltage Engine",
 			"Tags": [
 				"physics",
 				"gameplay"
 			],
-			"EngineVersion": ">=0.1.0",
+			"EngineVersion": ">=0.2.0",
 			"Homepage": "https://github.com/VoltageEngine/Voltage.FarseerPhysics"
 		},
 		{
 			"Id": "voltage.dialoguemaker",
 			"Name": "DialogueMaker",
 			"Description": "Branching narrative graphs (.vdialogue) with a node editor, typed variables, conditions, and a timeline track for playing dialogue inside a cutscene.",
-			"Zip": "https://github.com/VoltageEngine/Voltage.DialogueMaker/releases/download/v0.1.0/voltage.dialoguemaker-0.1.0.zip",
+			"Zip": "https://github.com/VoltageEngine/Voltage.DialogueMaker/releases/download/v0.2.0/voltage.dialoguemaker-0.2.0.zip",
 			"Git": "https://github.com/VoltageEngine/Voltage.DialogueMaker.git",
-			"Ref": "v0.1.0",
+			"Ref": "v0.2.0",
 			"Author": "Voltage Engine",
 			"Tags": [
 				"narrative",
@@ -31,7 +31,7 @@
 				"gameplay",
 				"editor"
 			],
-			"EngineVersion": ">=0.1.0",
+			"EngineVersion": ">=0.2.0",
 			"Homepage": "https://github.com/VoltageEngine/Voltage.DialogueMaker"
 		}
 	]
