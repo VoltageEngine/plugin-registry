@@ -16,6 +16,23 @@
 			],
 			"EngineVersion": ">=0.1.0",
 			"Homepage": "https://github.com/VoltageEngine/Voltage.FarseerPhysics"
+		},
+		{
+			"Id": "voltage.dialoguemaker",
+			"Name": "DialogueMaker",
+			"Description": "Branching narrative graphs (.vdialogue) with a node editor, typed variables, conditions, and a timeline track for playing dialogue inside a cutscene.",
+			"Zip": "https://github.com/VoltageEngine/Voltage.DialogueMaker/releases/download/v0.1.0/voltage.dialoguemaker-0.1.0.zip",
+			"Git": "https://github.com/VoltageEngine/Voltage.DialogueMaker.git",
+			"Ref": "v0.1.0",
+			"Author": "Voltage Engine",
+			"Tags": [
+				"narrative",
+				"dialogue",
+				"gameplay",
+				"editor"
+			],
+			"EngineVersion": ">=0.1.0",
+			"Homepage": "https://github.com/VoltageEngine/Voltage.DialogueMaker"
 		}
 	]
 }
