@@ -1,4 +1,4 @@
-# Voltage Engine — Official Plugin Registry
+# Voltage Engine - Official Plugin Registry
 
 The catalogue behind **Browse Plugins** in the Voltage editor. The editor reads
 [`registry.json`](registry.json) straight from this repository's `main` branch:
@@ -33,7 +33,7 @@ Open a pull request adding one entry to the `Plugins` array.
 |---|---|---|
 | `Id` | yes | Globally unique, lowercase, dotted. Must match the `Id` in your `plugin.json`. |
 | `Name` | yes | Display name. |
-| `Description` | yes | One sentence — it is shown in the browser list. |
+| `Description` | yes | One sentence - it is shown in the browser list. |
 | `Zip` | preferred | Release archive. Pinned by content hash on install. |
 | `Git` | optional | Clone URL. Only used when `Zip` is absent. |
 | `Ref` | optional | Tag or branch for the `Git` source. |
@@ -44,7 +44,7 @@ Open a pull request adding one entry to the `Plugins` array.
 
 ### Prefer `Zip` over `Git`
 
-The Git resolver clones and reads `plugin.json` — it never builds. A Git source therefore has to commit
+The Git resolver clones and reads `plugin.json` - it never builds. A Git source therefore has to commit
 its built DLLs. A release archive lets your repository stay source-only and lets the editor pin the
 download by content hash. Point `Zip` at a release asset and keep `lib/` and `editor-lib/` gitignored.
 
@@ -55,6 +55,6 @@ cannot be shadowed by a registry added later.
 
 ## Running your own registry
 
-The registry URL list in the editor is a list, not a single overridable link — an internal studio
+The registry URL list in the editor is a list, not a single overridable link - an internal studio
 catalogue sits alongside this one rather than replacing it. Host a `registry.json` in this same schema
 and add its raw URL in the editor's plugin settings.
