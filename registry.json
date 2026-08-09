@@ -1,6 +1,6 @@
 {
 	"SchemaVersion": 1,
-	"Name": "Voltage Engine — Official Plugin Registry",
+	"Name": "Voltage Engine - Official Plugin Registry",
 	"Plugins": [
 		{
 			"Id": "voltage.farseer",
