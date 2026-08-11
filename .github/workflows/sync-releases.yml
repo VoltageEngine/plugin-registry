@@ -1,0 +1,56 @@
+name: Sync plugin releases
+
+# Points every listing at its plugin's latest release, so a published version reaches Browse Plugins
+# without anyone editing registry.json.
+#
+# This is the pull half of what used to be a push. Each plugin repository was expected to open a pull
+# request here when it released, which needed a fine-grained PAT with write access to this repository
+# stored as a secret on every plugin repo. No plugin repo ever had one, so nothing was ever submitted and
+# the catalogue quietly lagged behind published releases - a plugin could tag, build, attach its package
+# and still be offered at the previous version indefinitely.
+#
+# Reading releases needs no secret at all: this repository's own GITHUB_TOKEN can query public releases
+# and commit here. Curation stays with people - which plugins are listed, and their Name, Description,
+# Tags and Homepage, only ever change by pull request. This touches Ref and Zip and nothing else, and
+# only ever moves them forward.
+on:
+  schedule:
+    # Hourly, off the hour: scheduled jobs on the hour queue behind everyone else's.
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One at a time, and never cancelled: two runs committing registry.json would race, and a cancelled run
+# is worse than a slow one when the job ends in a push.
+concurrency:
+  group: sync-releases
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Point each listing at its latest release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/sync-releases.py
+
+      - name: Commit the result
+        run: |
+          if git diff --quiet -- registry.json; then
+            echo "Every listing already points at its latest release."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -qm "Point listings at their latest releases" -- registry.json
+          git push -q
+
+          echo "Pushed:"
+          git show --stat --oneline HEAD
