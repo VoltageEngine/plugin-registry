@@ -6,9 +6,9 @@
 			"Id": "voltage.farseer",
 			"Name": "Farseer Physics",
 			"Description": "Full rigid-body physics (Box2D-lineage Farseer) with the FS* component family: FSRigidBody, FSCollisionBox/Circle/Polygon, joints, and FSWorld.",
-			"Zip": "https://github.com/VoltageEngine/Voltage.FarseerPhysics/releases/download/v1.2.0/voltage.farseer-1.2.0.zip",
+			"Zip": "https://github.com/VoltageEngine/Voltage.FarseerPhysics/releases/download/v1.2.1/voltage.farseer-1.2.1.zip",
 			"Git": "https://github.com/VoltageEngine/Voltage.FarseerPhysics.git",
-			"Ref": "v1.2.0",
+			"Ref": "v1.2.1",
 			"Author": "Voltage Engine",
 			"Tags": [
 				"physics",
