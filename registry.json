@@ -21,9 +21,9 @@
 			"Id": "voltage.dialoguemaker",
 			"Name": "DialogueMaker",
 			"Description": "Branching narrative graphs (.vdialogue) with a node editor, typed variables, conditions, and a timeline track for playing dialogue inside a cutscene.",
-			"Zip": "https://github.com/VoltageEngine/Voltage.DialogueMaker/releases/download/v0.3.0/voltage.dialoguemaker-0.3.0.zip",
+			"Zip": "https://github.com/VoltageEngine/Voltage.DialogueMaker/releases/download/v0.3.1/voltage.dialoguemaker-0.3.1.zip",
 			"Git": "https://github.com/VoltageEngine/Voltage.DialogueMaker.git",
-			"Ref": "v0.3.0",
+			"Ref": "v0.3.1",
 			"Author": "Voltage Engine",
 			"Tags": [
 				"narrative",
